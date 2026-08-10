@@ -39,7 +39,8 @@ concurrency:
   
 env:
   NODE_VERSION: "22"
-  IMAGE_NAME: zomato
+  IMAGE_NAME: nihal727/nihal-project
+  IMAGE_TAG: ${{ github.sha }}
   REPO: nodejsimage
  
 jobs:
@@ -248,7 +249,7 @@ jobs:
         push: false
 
         tags: |
-          ${{ env.IMAGE_NAME }}
+          ${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
           ${{ env.IMAGE_NAME }}:latest
 
         cache-from: type=local,src=/tmp/.buildx-cache
