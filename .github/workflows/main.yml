@@ -40,8 +40,8 @@ concurrency:
 env:
   NODE_VERSION: "22"
   IMAGE_NAME: zomato
-  IMAGE_TAG: ${{ github.sha }}
-  REPO: nihal-project
+  IMAGE_TAG: nihal727/nihal-project:tagname
+  REPO: nodejsimage
  
 jobs:
 
