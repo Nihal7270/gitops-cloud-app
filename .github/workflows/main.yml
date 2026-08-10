@@ -41,7 +41,7 @@ env:
   NODE_VERSION: "22"
   IMAGE_NAME: zomato
   IMAGE_TAG: ${{ github.sha }}
-  REPO: nodejsimage
+  REPO: nihal-project
  
 jobs:
 
